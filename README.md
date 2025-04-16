@@ -14,3 +14,7 @@ pip install -r requirements.txt
 - Need a camera to monitor the entrance of the house and send video to the Raspberry Pi for processing.
 - Need a way to send notifications to the user when a face is recognized.
 - Need a speaker to send fun messages to the user when a face is recognized.
+- keep the code modular so that we can add more features later.
+- use github actions and pages to handle deployment
+- single user webpage with only one password field
+- store password in .env

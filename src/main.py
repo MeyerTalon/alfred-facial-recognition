@@ -1,7 +1,7 @@
 import face_recognition
 import cv2
 import numpy as np
-
+ 
 
 # Get a reference to webcam #0 (the default one)
 video_capture = cv2.VideoCapture(0)
@@ -18,21 +18,28 @@ trump_face_encoding = face_recognition.face_encodings(trump_image)[0]
 talon_image = face_recognition.load_image_file(r'./faces/cool-face-1.jpeg')
 talon_face_encoding = face_recognition.face_encodings(talon_image)[0]
 
-baddie_image = face_recognition.load_image_file(r'./faces/mel-face-3.jpeg')
-baddie_face_encoding = face_recognition.face_encodings(talon_image)[0]
+# Yummy
+baddie_image = face_recognition.load_image_file(r'./faces/mel-face-1.jpeg')
+baddie_face_encoding = face_recognition.face_encodings(baddie_image)[0]
+
+# Caleb
+caleb_image = face_recognition.load_image_file(r'./faces/caleb.png')
+caleb_face_encoding = face_recognition.face_encodings(caleb_image)[0]
 
 # Create arrays of known face encodings and their names
 known_face_encodings = [
     obama_face_encoding,
     trump_face_encoding,
     talon_face_encoding,
-    baddie_face_encoding
+    baddie_face_encoding,
+    caleb_face_encoding
 ]
 known_face_names = [
     'Obama',
     'Trump',
     'Swag Talon',
-    'Baddie'
+    'Mel',
+    'Caleb'
 ]
 
 # Initialize some variables
