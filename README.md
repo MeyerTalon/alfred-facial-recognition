@@ -18,3 +18,17 @@ pip install -r requirements.txt
 - use github actions and pages to handle deployment
 - single user webpage with only one password field
 - store password in .env
+- use the local raspberry pi as a server to handle updating the face recognition model vectorized database
+
+
+## Architecture
+
+- RAG based facial recognition system
+- Whenever an unfamiliar face is detected, the system will send a notification to the website on github pages
+- The website will have a password field to allow the user to view the pictures and the recognized faces
+
+## More Architecture
+
+- Create vectorized database of faces to recognize
+- Monitor camera for these faces
+- SFace using ONNX for facial recognition
