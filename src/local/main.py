@@ -1,27 +1,13 @@
-import face_recognition
-import cv2
 import numpy as np
 from database import VectorizedDatabase
-
-
+from deepface import DeepFace
+import os
 
 
 if __name__ == "__main__":
-    # Load the model
-    # db = VectorizedDatabase()
 
-    pass
-
-
-
-
-
-
-
-
-
-
-
+    db = VectorizedDatabase()
+    print(db.filenames)
 
 
 
